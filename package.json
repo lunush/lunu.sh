@@ -8,7 +8,7 @@
 		"build": "npm run build:tailwind && svelte-kit build",
 		"start": "svelte-kit start",
 		"dev": "concurrently \"svelte-kit dev\" \"npm run watch:tailwind\"",
-		"lint": "svelte-check --fail-on-warnings && tsc && prettier --check --ignore-path .gitignore . && eslint --ignore-path .gitignore .",
+		"lint": "svelte-check --fail-on-warnings && prettier --check --ignore-path .gitignore . && eslint --ignore-path .gitignore .",
 		"format": "prettier --ignore-path .gitignore --write .",
 		"fix": "eslint --ignore-path .gitignore . --fix",
 		"prepare": "husky install"
