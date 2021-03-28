@@ -1,7 +1,7 @@
 const { screens } = require('tailwindcss/defaultTheme');
 
 module.exports = {
-	purge: [],
+	purge: ['./public/**/*.html', './src/**/*.{js,ts,svelte}'],
 	darkMode: false,
 	theme: {
 		screens: { xs: { min: '420px' }, ...screens },
@@ -16,11 +16,6 @@ module.exports = {
 				120: '30rem',
 				150: '37.5rem'
 			}
-		}
-	},
-	variants: {
-		extend: {
-			textColor: ['visited']
 		}
 	},
 	plugins: [require('tailwindcss-blend-mode')()]
