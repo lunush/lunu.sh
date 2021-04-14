@@ -1,3 +1,1 @@
-<main>
-	<h1 class="text-3xl">Portfolio</h1>
-</main>
+<h1 class="text-3xl">Portfolio</h1>
