@@ -6,6 +6,13 @@ module.exports = {
 	purge: ['./public/**/*.html', './src/**/*.{js,ts,svelte}'],
 	darkMode: false,
 	theme: {
+		fontFamily: {
+			sans: ['Poppins'],
+			serif: ['Poppins'],
+			mono: ['Poppins'],
+			display: ['Poppins'],
+			body: ['Poppins']
+		},
 		screens: { xs: { min: '420px' }, ...screens },
 		extend: {
 			maxWidth: {
