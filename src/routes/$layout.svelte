@@ -5,7 +5,7 @@
 		<a class="text-xl" href="/contact">Contact</a>
 	</nav>
 
-	<main class="relative h-full top-0 bottom-0 bg-gradient-to-b from-gray-50 to-white">
+	<div class="relative h-full bg-gradient-to-b from-gray-50 to-white">
 		<slot />
-	</main>
+	</div>
 </div>

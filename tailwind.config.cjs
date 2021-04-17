@@ -1,3 +1,5 @@
+// Vite doesn't work with jit
+// https://github.com/tailwindlabs/tailwindcss/issues/4073
 const { screens } = require('tailwindcss/defaultTheme');
 
 module.exports = {

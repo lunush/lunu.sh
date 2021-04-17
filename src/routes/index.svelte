@@ -1,13 +1,25 @@
 <script>
 	import Avatar from '../assets/images/avatar.png';
+	import { send, receive } from '../lib/utils/crossFade';
 </script>
 
-<main class="grid place-items-center h-full w-full">
-	<div class="flex flex-col sm:flex-row align-middle items-center">
-		<img src={Avatar} alt="Avatar" class="h-60 mb-6 sm:mb-0 sm:mr-6" />
-		<div class="flex flex-col items-center sm:items-start">
-			<h1 class="text-3xl sm:text-4xl sm:mb-4">Hi there! <span class="wave">👋</span></h1>
-			<h2 class="text-xl sm:text-2xl">I am a self-taught web developer</h2>
+<main class="absolute grid place-items-center h-full w-full p-6">
+	<div class="flex flex-col sm:flex-row items-center">
+		<img
+			out:send={{ key: 'avatar' }}
+			in:receive={{ key: 'avatar' }}
+			src={Avatar}
+			alt="Avatar"
+			class="h-60 mb-6 sm:mb-0 sm:mr-6"
+		/>
+		<div
+			class="flex flex-col items-center sm:items-start bg-white p-4 border
+    rounded-t-3xl rounded-b-3xl rounded-tl sm:rounded-tl-3xl sm:rounded-bl"
+		>
+			<h1 class="text-3xl sm:text-4xl mb-2 sm:mb-4">Hi there! <span class="wave">👋</span></h1>
+			<h2 class="text-xl sm:text-2xl max-w-sm">
+				I am a web developer interested in privacy and security
+			</h2>
 		</div>
 	</div>
 </main>
