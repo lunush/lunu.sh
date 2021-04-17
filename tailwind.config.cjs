@@ -1,7 +1,6 @@
 const { screens } = require('tailwindcss/defaultTheme');
 
 module.exports = {
-	mode: 'jit',
 	purge: ['./public/**/*.html', './src/**/*.{js,ts,svelte}'],
 	darkMode: false,
 	theme: {
